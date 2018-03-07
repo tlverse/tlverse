@@ -15,8 +15,8 @@ Imports:
 	tmle3,
 	tltools
 Remotes:
-    github::tlverse/delayed
-    github::tlverse/sl3
-    github::tlverse/tmle3
+    github::tlverse/delayed,
+    github::tlverse/sl3,
+    github::tlverse/tmle3,
     github::tlverse/tltools
 RoxygenNote: 6.0.1
