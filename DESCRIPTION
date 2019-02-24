@@ -13,10 +13,16 @@ Imports:
 	origami,
 	sl3,
 	tmle3,
-	tltools
+	longbowtools,
+	hal9001,
+	tmle3mopttx,
+	tmle3shift
 Remotes:
     github::tlverse/delayed,
     github::tlverse/sl3,
     github::tlverse/tmle3,
-    github::tlverse/tltools
+    github::tlverse/longbowtools,
+    github::tlverse/hal9001,
+    github::tlverse/tmle3mopttx,
+    github::tlverse/tmle3shift
 RoxygenNote: 6.0.1
