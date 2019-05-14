@@ -1,22 +1,25 @@
 Package: tlverse
 Title: Umbrella Package for Targeted Learning in R
-Version: 0.0.0.9000
-Authors@R: person("Jeremy", "Coyle", email = "jeremyrcoyle@gmail.com", role = c("aut", "cre"))
-Description: This is an umbrella package analogous to tidyverse that loads all the component packages of the tlverse, a set of Targeted Learning packages.
+Version: 0.0.1
+Authors@R: person("Jeremy", "Coyle", email = "jeremyrcoyle@gmail.com",
+  role = c("aut", "cre"))
+Description: This is an umbrella package analogous to tidyverse that loads all
+  the component packages of the tlverse, a set of Targeted Learning packages.
 Depends: R (>= 3.4.2)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/tlverse/tlverse
 Imports:
-	delayed,
-	origami,
-	sl3,
-	tmle3,
-	longbowtools,
-	hal9001,
-	tmle3mopttx,
-	tmle3shift
+    delayed,
+    origami,
+    sl3,
+    tmle3,
+    longbowtools,
+    tmle3mopttx,
+    tmle3shift
+Suggests:
+    hal9001
 Remotes:
     github::tlverse/delayed,
     github::tlverse/sl3,
@@ -25,4 +28,4 @@ Remotes:
     github::tlverse/hal9001,
     github::tlverse/tmle3mopttx,
     github::tlverse/tmle3shift
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
