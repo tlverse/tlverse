@@ -1,25 +1,28 @@
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-tlverse
-=======
+# R/`tlverse`: Your One Stop for Targeted Learning in R
 
-`tlverse` is an umbrella package for targeted learning in R.
+The `tlverse` is an umbrella R package for targeted learning with the `tlverse`
+ecosystem of R packages.
 
 `library(tlverse)` loads the following core packages:
 
--   [sl3](https://jeremyrcoyle.github.io/sl3/) for SuperLearning
--   [tmle3](https://jeremyrcoyle.github.io/tmle3/) for TMLE (Targeted Minimum Loss-based Estimation)
+- [`sl3`](https://tlverse.org/sl3) for Ensemble Machine (Super) Learning
+- [`tmle3`](https://tlverse.org/tmle3) for Targeted Minimum Loss-based
+    Estimation (TMLE)
 
 as well as the following helper packages:
 
--   [delayed](https://github.com/jeremyrcoyle/delayed) for parallelizing dependent tasks
--   [origami](https://github.com/jeremyrcoyle/origami) for cross-validation
+- [`delayed`](https://tlverse.org/delayed) for parallelizing
+    dependent tasks
+- [`origami`](https://tlverse.org/origami) for cross-validation
 
-and packages for individual tmle3 parameters:
+and packages for individual `tmle3` parameters:
 
-*coming soon*
+- [`tmle3mopttx`](https://github.com/tlverse/tmle3mopttx) for targeted learning
+    and variable importance with optimal individualized (categorical) treatments
+- [`tmle3shift`](https://tlverse.org/tmle3shift) for targeted learning and
+   variable importance with stochastic interventions
 
-Installation
-------------
+## Installation
 
 The `tlverse` ecosystem of packages are currently hosted at
 https://github.com/tlverse, not yet on [CRAN](http://cran.r-project.org/). You
