@@ -52,20 +52,26 @@ gen_data <- function(n, eps_sd = 0.2){
 data <- gen_data(100)
 ```
 
-```{r save_data}
-# TODO: Document your data (see 'https://r-pkgs.org/data.html')
-schematic_full <- data
-schematic <- data[,list(W,A,Y)]
-usethis::use_data(schematic, schematic_full, overwrite = TRUE)
-```
-
 ```{r calc_psi_0}
 # Calc true parameters via simple MC sim
 test_data <- gen_data(1e6)
 sapply(data,quantile)
 EY1_truth <- mean(test_data$EY1)
 ATE_truth <- mean(test_data$EY1-test_data$EY0)
+schematic_xlim=c(1,10)
+schematic_ylim=c(min(pmin(test_data$EY0,test_data$EY1,test_data$Y)),
+                 max(pmax(test_data$EY0,test_data$EY1,test_data$Y)))
 ```
+
+```{r save_data}
+# TODO: Document your data (see 'https://r-pkgs.org/data.html')
+schematic_full <- data
+schematic <- data[,list(W,A,Y)]
+usethis::use_data(schematic, schematic_full, 
+                  schematic_xlim, schematic_ylim, overwrite = TRUE)
+```
+
+
 
 ```{r plot_settings}
 # global plot settings
