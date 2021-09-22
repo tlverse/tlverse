@@ -4,7 +4,7 @@ Version: 0.0.1
 Authors@R: person("Jeremy", "Coyle", email = "jeremyrcoyle@gmail.com",
   role = c("aut", "cre"))
 Description: This is an umbrella package analogous to tidyverse that loads all
-  the component packages of the tlverse, a set of Targeted Learning packages.
+  the component packages of the tlverse, a set of Targeted Learning packages. It also includes a few  data
 Depends: R (>= 3.4.2)
 License: GPL-3
 Encoding: UTF-8
