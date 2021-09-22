@@ -51,7 +51,7 @@ schematic_meta <- list(tsm_0 = tsm_0,
 # Plot
 
 ```{r true_dgd_plot}
-plot_schematic(schematic)
+plot_schematic(schematic, schematic_grid, schematic_meta)
 ```
 
 
