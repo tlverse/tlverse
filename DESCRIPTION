@@ -22,10 +22,10 @@ Suggests:
     hal9001
 Remotes:
     github::tlverse/delayed,
-    github::tlverse/sl3,
-    github::tlverse/tmle3,
+    github::tlverse/sl3@devel,
+    github::tlverse/tmle3@devel,
     github::tlverse/longbowtools,
-    github::tlverse/hal9001,
+    github::tlverse/hal9001@devel,
     github::tlverse/tmle3mopttx,
     github::tlverse/tmle3shift
 RoxygenNote: 6.1.1
