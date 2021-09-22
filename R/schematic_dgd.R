@@ -48,7 +48,9 @@ plot_schematic <- function(schematic,
   # TODO: maybe omit rug and lines if these are null
   # TODO: have option for facet or line type for different estimators/truth
   if(missing(meta)){
-    meta <- schematic_meta
+    lims <- schematic_meta$lims
+  } else {
+    lims <- meta$lims
   }
 
 
@@ -58,14 +60,14 @@ plot_schematic <- function(schematic,
   # viridis::viridis_pal()(4)[c(1,3,2,4)]
   cbPalette <- c("#440154FF", "#35B779FF", "#31688EFF", "#FDE725FF")
 
-  # TODO: fix X + Y labels (something is weird)
+
 
   # basic plot
   plot_obj <- ggplot(schematic,aes(x=W,y=Y, color=factor(A)))+
     geom_point(alpha=point_alpha)+
     scale_color_manual("Treatment Level (A)",values=cbPalette)+
-    scale_x_continuous(name = "Covariate (W)", limits = meta$lims$W)+
-    scale_y_continuous(name = "Outcome (Y)", limits = meta$lims$Y)+
+    scale_x_continuous(name = "Covariate (W)", limits = lims$W)+
+    scale_y_continuous(name = "Outcome (Y)", limits = lims$Y)+
     theme_bw()
 
   # add likelihood estimation lines if providef

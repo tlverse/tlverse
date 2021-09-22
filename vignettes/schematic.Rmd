@@ -37,12 +37,13 @@ schematic_grid <- make_schematic_grid()
 # Psi and Bounds
 
 ```{r calc_meta}
-
 tsm_0 <- schematic_grid[,list(Y=mean(EY_0)), by = list(A, type)]
 ate_0 <- tsm_0$Y[2]-tsm_0$Y[1]
+Y_range <- range(schematic_grid$EY)
+Y_range <- Y_range+c(-1,1)*0.2*diff(Y_range)
 lims <- list(W=range(schematic_grid$W),
              A=range(schematic_grid$A),
-             Y=range(schematic_grid$EY))
+             Y=Y_range)
 schematic_meta <- list(tsm_0 = tsm_0,
                        ate_0 = ate_0,
                        lims = lims)
