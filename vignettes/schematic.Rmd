@@ -54,8 +54,9 @@ data <- gen_data(100)
 
 ```{r save_data}
 # TODO: Document your data (see 'https://r-pkgs.org/data.html')
-schematic <- data
-usethis::use_data(schematic)
+schematic_full <- data
+schematic <- data[,list(W,A,Y)]
+usethis::use_data(schematic, schematic_full, overwrite = TRUE)
 ```
 
 ```{r calc_psi_0}
