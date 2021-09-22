@@ -17,7 +17,8 @@ Imports:
     tmle3,
     longbowtools,
     tmle3mopttx,
-    tmle3shift
+    tmle3shift,
+    data.table
 Suggests:
     hal9001
 Remotes:
@@ -28,4 +29,4 @@ Remotes:
     github::tlverse/hal9001@devel,
     github::tlverse/tmle3mopttx,
     github::tlverse/tmle3shift
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
